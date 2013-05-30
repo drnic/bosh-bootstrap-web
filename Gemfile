@@ -5,8 +5,9 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'pg'
 
+gem 'omniauth-amazon'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,7 +44,6 @@ group :test do
   gem "database_cleaner"
 end
 
-gem "mysql2"
 gem "puma"
 gem "redis"
 gem "rspec-rails", :group => [:development, :test]
