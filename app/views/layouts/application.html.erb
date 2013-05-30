@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<% if current_user %>
+  Signed in as <%= current_user.name %>!
+  <%= link_to "Sign out", signout_path %>
+<% else %>
+  <%= link_to(image_tag("http://g-ecx.images-amazon.com/images/G/01/lwa/btnLWA_gry_156x132.png"), "/auth/amazon") %>
+<% end %>
+
 <%= yield %>
 
 </body>
