@@ -47,3 +47,12 @@ test:
   host: localhost
   username: drnic
   password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: bosh-bootstrap-web_production
+  pool: 5
+  host: localhost
+  username: drnic
+  password:
